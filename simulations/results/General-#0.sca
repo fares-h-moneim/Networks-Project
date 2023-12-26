@@ -1,0 +1,47 @@
+version 3
+run General-0-20231226-12:43:18-7916
+attr configname General
+attr datetime 20231226-12:43:18
+attr datetimef 20231226-124318
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network networksproject.Network
+attr processid 7916
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 452
+config network networksproject.Network
+config seed-set 452
+config **..SenderWindow (3)
+config **..RecieverWindow (3)
+config **..SenderTimeOut (10)
+config **..ProcessingTime (0.5)
+config **.DuplicationDelay (0.1)
+config **.TransmissionDelay (1.0)
+config **.ErrorDelay (4.0)
+
+par Network.coordinator typename "\"networksproject.Coordinator\""
+par Network.node0 typename "\"networksproject.Node\""
+par Network.node0 ProcessingTime 0.5
+par Network.node0 DuplicationDelay 0.1
+par Network.node0 TransmissionDelay 1
+par Network.node0 ErrorDelay 4
+par Network.node0 SenderWindow 3
+par Network.node0 RecieverWindow 3
+par Network.node0 SenderTimeOut 10
+par Network.node1 typename "\"networksproject.Node\""
+par Network.node1 ProcessingTime 0.5
+par Network.node1 DuplicationDelay 0.1
+par Network.node1 TransmissionDelay 1
+par Network.node1 ErrorDelay 4
+par Network.node1 SenderWindow 3
+par Network.node1 RecieverWindow 3
+par Network.node1 SenderTimeOut 10
+par Network typename "\"networksproject.Network\""
+

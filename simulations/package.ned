@@ -1,3 +1,3 @@
-package networksproject.simulations;
+package section1.simulations;
 
 @license(LGPL);

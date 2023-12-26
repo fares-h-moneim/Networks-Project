@@ -1,4 +1,4 @@
 #!/bin/sh
 cd `dirname $0`
-../src/networksproject -n .:../src $*
-# for shared lib, use: opp_run -l ../src/networksproject -n .:../src $*
+../src/section1 -n .:../src $*
+# for shared lib, use: opp_run -l ../src/section1 -n .:../src $*
